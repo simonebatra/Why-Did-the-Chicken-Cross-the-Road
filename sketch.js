@@ -335,7 +335,7 @@ function keyPressed() {
 
   if (bird.collide(finishLineTwo)){
     gameState=3;
-    bird.x=250, 250;
+    bird.x=450, 250;
 
     if (gameState = 3){
       bird.destroy();
