@@ -335,7 +335,6 @@ function keyPressed() {
 
   if (bird.collide(finishLineTwo)){
     gameState=3;
-    bird.x=450, 250;
 
     if (gameState = 3){
       bird.destroy();
@@ -538,7 +537,7 @@ function playLevelThree(){
 
   train3.velocityX = 60;
 
-  bird = createSprite(200, 100, 50, 50);
+  bird = createSprite(0, 100, 50, 50);
   bird.addImage("bird", birdImg);
   bird.scale = 0.04;
 
