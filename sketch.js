@@ -185,10 +185,6 @@ function setup() {
 function draw() { 
   background(grassImg);
 
-  textSize(30);
-  fill("white");
-  text("Coins: "+ coinNum, 60,50);
-
   if (bird.collide(train1)||bird.collide(train2)|| bird.collide(train3)||bird.collide(train4)||bird.collide(train5)||bird.collide(train6)){
     gameState=4;
     bird.destroy();
@@ -290,6 +286,9 @@ gameOverMusic.stop();
 });
 
   drawSprites();
+   textSize(30);
+  fill("white");
+  text("Coins: "+ coinNum, 60,50);
 }
 
 function keyPressed() {
