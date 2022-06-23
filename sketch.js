@@ -538,7 +538,7 @@ function playLevelThree(){
 
   train3.velocityX = 60;
 
-  bird = createSprite(100, 100, 50, 50);
+  bird = createSprite(200, 100, 50, 50);
   bird.addImage("bird", birdImg);
   bird.scale = 0.04;
 
